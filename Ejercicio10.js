@@ -21,17 +21,19 @@ class NewsSearcher{
         //Obtener url
         var url = "https://gnews.io/api/v4/search?q=" + this.tema + "&token=" + this.apikey;
         
+        
         var res = $.getJSON(url).done(function(datos){
             $.each(datos.articles, function(i, item){
-                    document
+                    //$('.news').append("<a href=" + item.url +">"+ item.title + "</a><br>");
                     //
-                    let li = document.createElement('li');
+                    //let li = document.createElement('li');
                     let a = document.createElement('a');
                     a.setAttribute('href', item.url);
                     a.setAttribute('target', '_blank');
                     a.textContent = item.title;
-                    li.appendChild(a);
-                    noticias.appendChild(li);
+                    let br = document.createElement('br');
+                    noticias.appendChild(a);
+                    noticias.appendChild(br);
             })
         })
     }
