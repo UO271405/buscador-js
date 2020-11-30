@@ -1,0 +1,36 @@
+/*especificidad -> 1*/
+body{
+    font: 400 1em Tahoma, sans-serif;
+    line-height: 1.8;
+    color: black;
+    margin-left: 1.5em;
+}
+
+/*especificidad -> 10*/
+.container {
+    padding: 1em;
+    border: solid;
+    border-radius: 0.7em;
+    width: 50%;
+    border-color: blue;
+    margin-bottom: 1em;
+}
+
+.listaNoticias{
+    position: absolute;
+    top: 30%;
+}
+
+/*especificidad -> 11*/
+input[type=text]{
+    width: 35%;
+    padding: 0.75em 1.25em;
+    margin: 0.75em 0;
+    display: inline-block;
+    border: 0.063em solid black;
+    box-sizing: border-box;
+    border-radius: 0.7em;
+  }
+
+
+
