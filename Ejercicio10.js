@@ -26,6 +26,20 @@ class NewsSearcher{
             $.each(datos.articles, function(i, item){
                     //$('.news').append("<a href=" + item.url +">"+ item.title + "</a><br>");
                     //
+                    let li = document.createElement('li');
+                    let a = document.createElement('a');
+                    a.setAttribute('href', item.url);
+                    a.setAttribute('target', '_blank');
+                    a.textContent = item.title;
+                    li.appendChild(a);
+                    noticias.appendChild(li);
+            })
+        })
+
+        /*var res = $.getJSON(url).done(function(datos){
+            $.each(datos.articles, function(i, item){
+                    //$('.news').append("<a href=" + item.url +">"+ item.title + "</a><br>");
+                    //
                     //let li = document.createElement('li');
                     let p = document.createElement('p');
                     let a = document.createElement('a');
@@ -37,7 +51,7 @@ class NewsSearcher{
                     noticias.appendChild(p);
                     noticias.appendChild(br);
             })
-        })
+        })*/
     }
 }
 
