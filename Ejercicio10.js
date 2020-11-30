@@ -35,6 +35,7 @@ class NewsSearcher{
                     let br = document.createElement('br');
                     p.appendChild(a);
                     noticias.appendChild(p);
+                    noticias.appendChild(br);
             })
         })
     }
