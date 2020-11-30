@@ -3,23 +3,24 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>News searcher</title>
+        <title>Buscador de noticias</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="Ejercicio10.js"></script>
         <link rel="stylesheet" href="Ejercicio10.css"/>
     </head>
     <body>
-        <h1>News searcher</h1>
+        <h1>Buscador de noticias</h1>
         <div class="container">
             <strong>Introduzca una palabra clave y le mostraremos noticias que contengan esa palabra.</strong>
             <br>
-            <input type="text" title="txtPalabraClave" placeholder="(ejemplo: Apple)" id="txtPalabraClave" name="txtPalabraClave" required>
+            <input type="text" title="txtPalabraClave" placeholder="(ejemplo: Ordenador)" id="txtPalabraClave" name="txtPalabraClave" required>
             <br>
             <button id = "aceptar" onclick = "searcher.load();">Buscar</button>
         </div>
         
         <div class="listaNoticias">
-            <ul class="news"></ul>
+            <p><strong>Enlaces:</strong></p>
+            <p class="news"></p>
         </div>
     </body>
 </html>
