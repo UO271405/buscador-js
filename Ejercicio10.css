@@ -16,6 +16,7 @@ body{
     margin-bottom: 1em;
 }
 
+/*especificidad -> 10*/
 .listaNoticias{
     position: absolute;
     top: 30%;
