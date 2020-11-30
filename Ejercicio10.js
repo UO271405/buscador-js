@@ -27,13 +27,14 @@ class NewsSearcher{
                     //$('.news').append("<a href=" + item.url +">"+ item.title + "</a><br>");
                     //
                     //let li = document.createElement('li');
+                    let p = document.createElement('p');
                     let a = document.createElement('a');
                     a.setAttribute('href', item.url);
                     a.setAttribute('target', '_blank');
                     a.textContent = item.title;
                     let br = document.createElement('br');
-                    noticias.appendChild(a);
-                    noticias.appendChild(br);
+                    p.appendChild(a);
+                    noticias.appendChild(p);
             })
         })
     }
